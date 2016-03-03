@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4_2_Etsy_Recreation</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+    <header class="row">
+      <div class="col-md-6 search">
+        <div class="logo">
+          <a href="https://www.etsy.com/?ref=lgo"></a>
+        </div>
+        <div class="form-wrapper">
+          <form>
+            <div class="input-wrapper">
+            <input>
+          </div><div class="button-wrapper"><button class="btn btn-primary" type="submit" value="search">
+               Search
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6 account-info">
+        <ul class="acct-buttons">
+          <li><span>Sell on Etsy</span></li>
+          <li><span>Register</span></li>
+          <li><span>Sign in</span></li>
+        </ul>
+      </div>
+      <div class="col-md-12 categories">
+        <ul class="navigation">
+          <li class="list-inline-item"> Clothing &amp; Accessories </li>
+          <li class="list-inline-item"> Jewelry </li>
+          <li class="list-inline-item">Craft Supplies &amp; Tools</li>
+          <li class="list-inline-item"> Weddings</li>
+          <li class="list-inline-item"> Entertainment </li>
+          <li class="list-inline-item"> Home &amp; Living </li>
+          <li class="list-inline-item"> Kids &amp; Baby </li>
+          <li class="list-inline-item"> Vintage </li>
+        </ul>
+      </div>
+    </header>
+<div class="container">
+    <div class="row content">
+      <div class="sidebar col-md-3">
+        <h5>Show results for</h5>
+        <div class="sidebar-cats">
+            <span>All Categories</span>
+            <ul>
+              <li> Craft Supplies &amp; Tools</li>
+              <li> Accessories</li>
+              <li> Home &amp; Living</li>
+              <li> Clothing</li>
+              <li> Jewelery</li>
+              <li> Toys &amp; Games</li>
+              <li> Art &amp; Collectibles</li>
+              <li> Bags &amp; Purses</li>
+              <li>Bath &amp; Beauty</li>
+              <li>Paper &amp; Party Supplies</li>
+              <li> Shoes</li>
+              <li> Pet Supplies</li>
+              <li>Books, Movies &amp; Music</li>
+              <li>Weddings</li>
+              <li>Electronics &amp; Accessories</li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="search-cats">
+        <div class="col-md-9">
+            <h5> Top Categories for "yarn" </h5>
+            <div class="row">
+                <div class="col-md-6 top-cats">
+                  <div class="top-cat-1">
+                  </div>
+                </div>
+                <div class="col-md-6 top-cats">
+                  <div class="top-cat-2">
+                  </div>
+                </div>
+            </div>
+            <div class="row bc">
+                <div class="col-md-4 bottom-cats">
+                  <div class="top-cat-3">
+                  </div>
+                </div>
+                <div class="col-md-4 bottom-cats">
+                  <div class="top-cat-4">
+                  </div>
+                </div>
+                <div class="col-md-4 bottom-cats">
+                  <div class="top-cat-5">
+                  </div>
+                </div>
+            </div>
+
+          <div class="row search-item-wrapper">
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script id="products" type="text/x-handlebars-template">
+<div class="col-md-4">
+  <div class="result">
+    <div class="result-pic" style = "background-image: url({{productUrl}});background-size:cover;">
+      <div class="heart">
+        <span class="glyphicon glyphicon-heart"></span>
+      </div>
+      <div class="share">
+        <span class="glyphicon glyphicon-th-list"></span>
+      </div>
+    </div>
+    <div class="product-info">
+      <h6>{{prodName}}</h6>
+      <span>{{owner}}</span>
+      <span class="prices">{{price}}</span>
+    </div>
+    </div>
+  </div>
+</script>
+  <script type="text/javascript" src="js/active.js"></script>
+    <script src="js/bundle.js"></script>
+  </div>
+  </body>
+
+</html>

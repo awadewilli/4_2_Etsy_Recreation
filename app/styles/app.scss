@@ -1,0 +1,135 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+.list-inline-item{
+  margin-right: 40px;
+  display: inline-block;
+  height:30px;
+  text-align: center;
+}
+body{
+  background-color: rgb(245,245,241);
+}
+.categories{
+  padding: 0px;
+
+}
+.logo{
+  width:75px;
+  height:50px;
+  background-size: cover;
+  background: url("https://www.etsy.com/assets/dist/images/etsylogo.20160212170534.png") transparent no-repeat center center;
+  display:inline-block;
+  margin-left: 80px;
+  margin-top: 12px;
+  margin-right: 10px;
+}
+.acct-buttons li{
+  display: inline-block;
+  height:50px;
+  padding-top: 20px;
+  color: #0192B5;
+}
+.input-wrapper{
+
+display: inline-block;
+}
+.button-wrapper{
+
+  display: inline-block;
+}
+form{
+
+  display: inline-block;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  position: relative;
+  bottom:20px;
+
+}
+.form-wrapper{
+  display:inline-block;
+}
+input{
+  height:30px;
+  width:250px;
+}
+.navigation{
+  padding-left: 100px;
+  padding-top: 7px;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  margin-bottom: 0px;
+}
+header{
+  background-color: rgb(255,255,255);
+}
+.sidebar-cats{
+  margin-right: 40px;
+  margin-top: 20px;
+  padding:10px;
+  border-radius: 3px;
+  background-color: #FFF;
+  border: 1px solid #E1E3DF;
+  border-bottom-color: #CBCCC9;
+  color: #0192B5;
+}
+.sidebar-cats li{
+  list-style: none;
+  height:25px;
+}
+.top-cats > div {
+  background-color: blue;
+  height:253px;
+
+}
+.bottom-cats > div {
+  background-color: red;
+  height:180px;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+.bc{
+  border-bottom: solid black 1px;
+}
+.heart, .share{
+  height:30px;
+  width:35px;
+  padding-left:10px;
+  padding-top: 7px;
+  background-color: white;
+  border-radius: 3px;
+  float:right;
+  margin-top: 10px;
+  margin-right: 5px;
+
+}
+.result-pic{
+  height:178.656px;
+}
+.result{
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.product-info{
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  h6{
+    margin-top: 0px;
+  }
+}
