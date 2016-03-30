@@ -19,20 +19,22 @@ function fetchJSONP(url, callback) {
     document.body.appendChild(script);
 }
 
+fetchJSONP(url,logData);
+
 function logData (data){
   console.log(data);
-}
 
-var result = fetchJSONP(url,logData).then();
 
-  function addToTemp (data){
     var source   = $("#products").html();
     var template = handlebars.compile(source);
+    console.log(data.results);
 
-    _.each(result.results,function(){
-    var context = {prodName: result.results.title, owner:result.results.title, price:result.results.price, productUrl:result.results.image_url_760x100};
-    var html    = template(context);
-    console.log(context);
-  $('#products').html(html);
-});
+    data.results.map(function(item){
+      var title = item.title;
+      console.log(item);
+      var context = {'prodName': item.title, 'owner':item.Shop.shop_name, 'price':item.price, 'productUrl':item.Images[0].url_170x135,'currency':item.currency_code};
+      var html    = template(context);
+      $('.search-item-wrapper').append(html);
+
+    });
 }

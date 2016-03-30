@@ -69,10 +69,11 @@ input{
   width:250px;
 }
 .navigation{
+  color:#666666;
   padding-left: 100px;
   padding-top: 7px;
-  border-top: solid black 1px;
-  border-bottom: solid black 1px;
+  border-top: solid #E1E3DF 1px;
+  border-bottom: solid #E1E3DF 1px;
   margin-bottom: 0px;
 }
 header{
@@ -97,8 +98,28 @@ header{
   height:253px;
 
 }
+.top-cat-1{
+  background-image: url('https://img1.etsystatic.com/112/0/7286286/il_340x270.911776663_3o5u.jpg');
+  background-size: cover;
+}
+.top-cat-2{
+  background-image: url('https://img0.etsystatic.com/105/0/8969404/il_340x270.934312648_1666.jpg');
+  background-size: cover;
+
+}
+.top-cat-3{
+  background-image: url('https://img1.etsystatic.com/113/1/7122635/il_340x270.987346425_bjrt.jpg');
+  background-size: cover;
+}
+.top-cat-4{
+  background-image: url('https://img1.etsystatic.com/133/0/9912492/il_340x270.924583105_gnyp.jpg');
+  background-size: cover;
+}
+.top-cat-5{
+  background-image: url('https://img0.etsystatic.com/123/0/12504532/il_340x270.934520844_qf3g.jpg');
+  background-size: cover;
+}
 .bottom-cats > div {
-  background-color: red;
   height:180px;
   margin-top:20px;
   margin-bottom: 20px;
@@ -124,12 +145,18 @@ header{
 .result{
   margin-top:10px;
   margin-bottom: 10px;
+  height:250px;
 }
 .product-info{
   background-color: white;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-overflow: ellipsis;
   h6{
     margin-top: 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height:15px;
+
   }
 }
